@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue">#5caaef</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorLightGray">#D3D3D3</color>
+    <color name="colorPrimaryDark">#FF5722</color>
+    <color name="text_color">#313131</color>
+    <!-- New colors for TextViews -->
+    <color name="colorTotalIncome">#4CAF50</color> <!-- Green -->
+    <color name="colorTotalOutcome">#F44336</color> <!-- Red -->
+    <color name="colorRemainingMoney">#FF9800</color> <!-- Orange -->
+    <!-- Primary color -->
+    <color name="colorPrimary">#FF5722</color> <!-- A bold orange color -->
+
+    <!-- Accent color -->
+    <color name="colorAccent">#FFC107</color> <!-- A bright amber color -->
+
+    <!-- Text color -->
+    <color name="textColorPrimary">#333333</color> <!-- Dark gray text color -->
+
+    <!-- EditText background color -->
+    <color name="editTextBackground">#FFFFFF</color> <!-- White background for EditText -->
+
+    <!-- Button text color -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White text color for buttons -->
+
+    <!-- Button background colors -->
+    <color name="buttonPrimaryBackground">#FF5722</color> <!-- Primary button background -->
+    <color name="buttonAccentBackground">#FFC107</color> <!-- Accent button background -->
+    <!-- Default button color -->
+    <color name="button_default">#5caaef</color> <!-- Blue color -->
+    <!-- Color when the button is pressed -->
+    <color name="button_pressed">#4a8fd6</color> <!-- Slightly darker blue -->
+    <!-- Color when the button is focused -->
+    <color name="button_focused">#4a8fd6</color> <!-- Same as pressed or different color -->
+    <color name="red">#FF0000</color>
+</resources>

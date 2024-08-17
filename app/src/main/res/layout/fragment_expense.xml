@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefreshlayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Title for the page -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Tracker"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="24dp"
+                android:textColor="#FF5722"/>
+
+            <!-- Input fields for expense details -->
+            <EditText
+                android:id="@+id/expenseDescriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter expense description"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/expenseAmountEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter expense amount"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/expenseDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter expense date (YYYY-MM-DD)"
+                android:inputType="date"
+                android:padding="12dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Buttons for adding, subtracting expense, updating and viewing history -->
+            <Button
+                android:id="@+id/addExpenseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Expense"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/subtractExpenseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subtract Expense"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/viewHistoryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View History"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Button to clear all expenses -->
+            <Button
+                android:id="@+id/clearExpensesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear Expenses"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- TextView to display total money -->
+            <TextView
+                android:id="@+id/totalMoneyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Money: $0.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                android:paddingBottom="16dp"/>
+
+            <!-- TextView to display the expense or history -->
+            <TextView
+                android:id="@+id/expenseTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expense details will appear here"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="16dp"/>
+
+            <!-- RecyclerView for displaying income and expenses -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+            <!-- RecyclerView for displaying outcome -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_outcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
